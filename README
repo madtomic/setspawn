@@ -1,0 +1,16 @@
+1. BUILDING:
+  i) Download a suitable Bukkit API jar from http://bukkit.org.
+  ii) Issue "BUKKIT_JAR=/path/to/bukkit.jar make jar"; cross fingers.
+  iii) If all went well, you're done. There should be a setspawn-x.y.jar in
+       your current directory.
+
+2. INSTALLING:
+  Simply copy the jar built in the previous section to the "plugins"
+  directory under your CraftBukkit server root. The plugin will automatically
+  load.
+
+3. USAGE:
+  To change the spawn point, issue the command "/setspawn" (as op).
+  This will update the spawn point to your current location. Note that
+  doing this in the Nether or Aether is not advisable, as spawn points
+  are set in terms of block coordinates. Consider yourself warned!
