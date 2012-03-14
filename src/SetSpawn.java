@@ -42,7 +42,11 @@ public class SetSpawn extends JavaPlugin {
 		    sender.sendMessage("Spawn location couldn't be set.");
 		}
 	    }
+	    return true;
 	}
+	// We really ought not to get here.
+	log.warning(String.format("SetSpawn: Unknown command name '%s'!",
+			       cmd.getName()));
 	return false;
     }
 }
