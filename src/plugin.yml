@@ -1,0 +1,15 @@
+name: SetSpawn
+main: net.tornwall.setspawn.SetSpawn
+version: 0.1
+
+commands:
+    setspawn:
+        description: Sets the world spawn point to your location.
+        usage: /setspawn
+        permission: setspawn.set
+        permission-message: Permission denied.
+
+permissions:
+    setspawn.set:
+        description: Allows you to set the world spawn point.
+        default: op
